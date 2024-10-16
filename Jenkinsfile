@@ -2,14 +2,14 @@ pipeline {
     agent any 
     stages {
 
-        stage('delete workspace') {
-            steps {
-                deleteDir()
-            }
+        stage('git checkout') {
+            sh '''
+                echo "git checkout"
+            '''
         }
         stage('build') {
             steps {
-                dir('terraform'){
+                dir('terraformvpc'){
                     sh 'ls -la'
                 }
             }
