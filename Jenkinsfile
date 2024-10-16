@@ -5,6 +5,7 @@ pipeline {
             steps {
                 dir('vpc1'){
                     sh 'terraform init'
+                    sh 'sucess'
                 }
             }
         }
