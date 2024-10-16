@@ -2,6 +2,12 @@ pipeline {
     agent any 
     stages {
 
+        stage('clean workspace') {
+            steps {
+                deleteDir()
+            }
+        }
+
         stage('git checkout') {
             steps {
             sh '''
