@@ -8,5 +8,14 @@ pipeline {
                     '''
             }
         }
+
+        stage('ls'){
+            dir('terraform'){
+                sh 'ls -la'
+            }
+        }
     }
 }
+
+
+
