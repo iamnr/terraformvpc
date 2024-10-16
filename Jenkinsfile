@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                dir('vpc1'){
+                dir('terraform'){
                     sh 'ls -la'
                 }
             }
