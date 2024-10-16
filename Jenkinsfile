@@ -9,9 +9,11 @@ pipeline {
             }
         }
 
-        stage('ls'){
-            dir('terraform'){
+        stage('ls') {
+            steps{
+                dir('terraform') {
                 sh 'ls -la'
+                }
             }
         }
     }
