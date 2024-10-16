@@ -11,7 +11,7 @@ pipeline {
         stage('git checkout') {
             steps {
             sh '''
-                echo "git checkout"
+                echo "git checkout test"
             '''
             }
         }
