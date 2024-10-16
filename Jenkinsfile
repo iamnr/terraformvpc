@@ -8,7 +8,25 @@ pipeline {
                     '''
             }
         }
+
+        stage('terraform init') {
+            dir('terraform') {
+                steps {
+                    sh '''
+                        terraform init
+                        '''
+                }
+            }
+        }
+
+        stage('delete dir') {
+            steps {
+                deleteDir()
+            }
+        }
     }
+
+
 }
 
 
