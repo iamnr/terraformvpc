@@ -10,13 +10,14 @@ pipeline {
         }
 
         stage('terraform init') {
-            dir('terraform') {
                 steps {
+                    dir('terraform') {
                     sh '''
                         terraform init
                         '''
+                    }
                 }
-            }
+        
         }
 
         stage('delete dir') {
