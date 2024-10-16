@@ -5,7 +5,6 @@ pipeline {
             steps {
                 dir('vpc1'){
                     sh 'ls -la'
-                    sh 'sucess'
                 }
             }
         }
