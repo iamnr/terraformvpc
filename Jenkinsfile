@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'building test'
+                dir('vpc1'){
+                    sh 'terraform init'
+                }
             }
         }
     }
