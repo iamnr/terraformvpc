@@ -8,20 +8,6 @@ pipeline {
                     '''
             }
         }
-
-        stage('ls') {
-            steps{
-                dir('terraform') {
-                sh 'ls -la'
-                }
-            }
-        }
-    }
-
-    post {
-        always {
-            deleteDir()
-        }
     }
 }
 
