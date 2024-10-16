@@ -3,9 +3,11 @@ pipeline {
     stages {
 
         stage('git checkout') {
+            steps {
             sh '''
                 echo "git checkout"
             '''
+            }
         }
         stage('build') {
             steps {
