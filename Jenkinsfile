@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 dir('vpc1'){
-                    sh 'terraform init'
+                    sh 'ls -la'
                     sh 'sucess'
                 }
             }
