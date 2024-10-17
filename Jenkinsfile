@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-                sh 'ls -la'
+                sh 'terraform init'
             }
         }
     }
