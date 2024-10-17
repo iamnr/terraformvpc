@@ -5,9 +5,15 @@ pipeline {
         stage('init') {
             steps {
                 sh '''
-                ls -la
-                terraform --version 
                 terraform init
+                '''
+            }
+        }
+
+        stage('plan') {
+            steps {
+                sh '''
+                terraform plan
                 '''
             }
         }
