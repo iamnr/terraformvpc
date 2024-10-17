@@ -2,7 +2,7 @@ pipeline {
     agent any 
 
     stages {
-        stage('git checkout') {
+        stage('init') {
             steps {
                 sh '''
                 ls -la
