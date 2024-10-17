@@ -23,12 +23,14 @@ pipeline {
         }
 
         stage('approve/destroy') {
-            script {
+            steps {
+                script {
                 if (params.action == 'apply') {
                     sh 'terraform apply --auto-approve'
                 }
                 else
                     sh 'terraform destroy --auto-approve'
+            }
             }
         }
     }
