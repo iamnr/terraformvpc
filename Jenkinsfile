@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh '''
                 ls -la
-                terraform init '''
+                terraform --version '''
             }
         }
     }
