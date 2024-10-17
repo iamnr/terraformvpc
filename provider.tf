@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "terraformstatefiletest"
-    key    = "terraform vpc"
+    key    = "terraform vpc test"
     region = "us-east-1"
     dynamodb_table = "roboshoplocking"  
     }
